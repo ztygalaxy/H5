@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>蓝绿大厂</title>
+		<link rel="stylesheet" href="css/transBig.css" />
+		<style type="text/css">
+		/*全局设置*/
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			body{
+				font-family: "微软雅黑";
+				background-color: #F6F6F6;
+			}
+			#top{
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+			}
+			#top:hover #backtop{
+				display: block;
+			}
+			#backtop{
+				display: none;
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+			}
+			
+		/*主框架设置*/
+			#wrap{
+				/*width: 100%;*/
+				width: 1897px;
+				height:1320px;
+				/*border: 2px red solid;*/
+				margin: 0 auto;
+			}
+			
+		/*headerCSS设置*/
+			.header{
+				width: 100%;
+				height: 110px;
+				/*background-color: gray;*/
+			}
+			.header-top{
+				width: 100%;
+				height: 30px;
+				background-color: #009B72;
+			}
+			.header-top ul{
+				height: 30px;
+				float: right;
+				font-size: 10px;
+				margin-right: 374px;
+			}
+			.header-top li{
+				float: left;
+				width: 74px;
+				text-align: center;
+				line-height: 30px;
+			}
+			.header-top ul .header-top-li1{
+				/*border-left: 1px solid white;*/
+				border-right: 1px solid white;
+			}
+			.header-top ul .header-top-li2{
+				border-right: 1px solid white;
+			}
+			.header-top ul .header-top-li3{
+				/*border-right: 1px solid white;*/
+			}
+			.header-top li a{
+				color: white;
+			}
+			.header-top li:hover{
+				background: rgba(255,255,255,0.4);
+			}
+			.header-bottom .header-bottom-center{
+				/*解决页面下沉*/
+				padding: 1px;
+				width: 1150px;
+				height: 79px;
+				margin: 0 auto;
+				/*background: pink;*/
+			}
+			.header-bottom-center-logo{
+				height: 30px;
+				width: 156px;
+				background: url(img/logo.png);
+				margin-top: 25px;
+				float: left;
+			}
+			.header-bottom-center ul{
+				float: right;
+			}
+			.header-bottom-center li{
+				float: left;
+				width: 74px;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+				color: gray;
+			}
+			.header-bottom-center li:hover{color: black;}
+			.header-bottom-center ul li a{color: gray;border-bottom: 2px solid #009B72;}
+			.header-bottom-center ul li a:hover{color: black;}
+			
+		/*mainCSS样式设置*/
+			.main{width: 100%;height: 910px;/*background: blue;*/margin-top: 5px;}
+			/*图片太大不能使用背景图片*/
+			.main-top-img{height: 582px;}
+			.main-top .main-top-img img{width: 100%;height: 582px;}
+			.main-bottom{width: 100%;margin: 0 auto;margin-top: 5px;}
+			.main-bottom img{width: 626px;float: left;margin-left: 5px;}
+			
+		/*footer样式设置*/
+			.footer{width: 100%;height: 300px;/*background: pink;*/margin-top: 5px;padding: 1px;}
+			.footer-top{
+				width: 1150px;
+				height: 190px;
+				/*background-color: gray;*/
+				margin: 50px auto;
+				border-bottom: 1px solid black;
+			}
+			.footer-top ul{float: left;font-size: 15px;}
+			.footer-top ul li{width: 215px;height: 30px;}
+			.footer-top ul .footer-top-li{
+				padding-bottom: 20px;
+				font-weight: 800;
+			}
+			.footer .footer-top .footer-top-right{
+				float: right;
+				margin: 15px 40px 0px 0px;
+			}
+			.footer-top-right .phone{height: 40px;width: 183px;font-size: 26px;margin-top: 10px;}
+			.footer-top-right .wechat{height: 47px;width: 183px;}
+			.footer-top-right .tips{height: 40px;width: 183px;margin-top: 5px;text-align: center;}
+			.footer-top-right .wechat div{
+				width: 183px;
+				height: 47px;
+				background: url(img/icon-online.png);
+			}
+			.footer-bottom{width: 1150px;height: 70px; /*background-color: gray;*/margin: 0 auto;}
+			.footer-bottom p{color: gray;float: left;height: 24px;line-height: 24px;margin-top: 13px;font-size: 13px;}
+			.footer-bottom-img{width: 24px;height: 24px;background:url(img/icon-identification.png);float: left;margin-top: 13px;}
+			.footer-bottom .footer-bottom-icon{width: 185px;height: 30px;float: right;background:url(img/sss.png);margin: 13px 20px 0px 0px;}
+			.footer-bottom-img:hover{background-position: 24px 0px;}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+		<!--头部-->
+			<div class="header">
+				<div class="header-top">
+					<ul>
+						<li class="header-top-li1"><a href="">登陆</a></li>
+						<li class="header-top-li2"><a href="">注册</a></li>
+						<li class="header-top-li3"><a href="">Global</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom">
+					<div class="header-bottom-center">
+						<div class="header-bottom-center-logo"></div>
+						<ul>
+							<li><a href="">首页</a></li>
+							<li>产品</li>
+							<li>商城</li>
+							<li>体验店</li>
+							<li>服务</li>
+							<li>ColorOS</li>
+							<li>社区</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!--肚子-->	
+			<div class="main">
+				<div class="main-top mt5">
+					<div class="main-top-img">
+						<img src="img/20170104050105586cbebdaf070.jpg" />
+					</div>
+				</div>
+				<div class="main-bottom mt5">
+					<div class="main-bottom-left">
+						<a href=""><img src="img/middle2.jpg"/></a>
+					</div>
+					<div class="main-bottom-center">
+						<a href=""><img src="img/middle1.jpg"/></a>
+					</div>
+					<div class="main-bottom-right">
+						<a href=""><img src="img/middle3.jpg"/></a>
+					</div>
+				</div>
+			</div>
+		<!--尾部-->
+			<div class="footer">
+				<div class="footer-top">
+					<ul>
+						<li class="footer-top-li">推荐机型</li><li>R9S</li><li>R9SPlus</li><li>A59S</li><li>A56</li>
+					</ul>
+					<ul>
+						<li class="footer-top-li">在线购买</li><li>手机配件</li><li>搜物指南</li><li>官网授权</li><li>配件</li>
+					</ul>
+					<ul>
+						<li class="footer-top-li">服务</li><li>服务网点查询</li><li>零件价格查询</li><li>云服务</li><li>建议与反馈</li>
+					</ul>
+					<ul>
+						<li class="footer-top-li">关于我们</li><li>关于OPPO</li><li>加入我们</li><li>采购相关</li><li>发布会回馈</li>
+					</ul>
+					<ul class="footer-top-right">
+						<li class="wechat"><div class=""></div></li>
+						<li class="phone">4001-666-888</li>
+						<li class="tips">（24小时全国服务热线）</li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<p>© 2005 - 2017 东莞市永盛通信科技有限公司 版权所有 粤ICP备08130115号-1 联系方式：4001-666-888</p>
+					<div class="footer-bottom-img"></div>
+					<div class="footer-bottom-icon"></div>
+				</div>
+			</div>
+		</div>
+		<div id="top">
+			<!--兄弟关系+父子关系空格不是同一个父亲不能用-->
+			<img src="img/top.png">
+			<div id="backtop">
+				<a href="#wrap"><img src="img/backtop.png"></a>
+			</div>
+		</div>
+	</body>
+</html>

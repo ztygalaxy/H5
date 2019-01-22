@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>一加</title>
+		<style type="text/css">
+		
+			#top{
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+			}
+			#top:hover #backtop{
+				display: block;
+			}
+			#backtop{
+				display: none;
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+			}
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				font-family: "微软雅黑";
+			}
+			#wrap{
+				width: 100%;
+				/*width: 1897px;*/
+				height: 3440px;
+				/*border: 2px red solid;*/
+				margin: 0 auto;
+			}
+			.head-big{
+				width: 100%
+				height: 110px;
+				/*background: gray;*/
+			}
+			.head{
+				width: 1150px;
+				height: 72px;
+				background: white;
+				margin: 19px auto;
+			}
+			.head-left{
+				height: 72px;
+				width: 169px;
+				float: left;
+				background: url(img/logo.png);
+			}
+			.head-big .head ul{
+				float: right;
+				/*background-color: yellow;*/
+				margin-top: 50px;
+			}
+			.head-big .head ul li{
+				float: left;
+				width: 124px;
+				border-left: 1px solid black;
+				border-right: 1px solid black;
+				text-align: center;
+			}
+			.main{
+				width: 100%;
+				background-color: blue;
+				height: 2948px;
+				padding: 0px;
+			}
+			.main-imges{
+				margin: 0 auto;
+				height: 800px;
+				width: 100%;
+				background-color: dimgray;
+			}
+			.main-imges-top{width: 1901px;margin: 0 auto;}
+			.main-imges .main-imges-top-left{float: left;width: 950px;height:600px;}
+			.main-imges .main-imges-top-r1{float: left;width: 475px;height: 300px;}
+			
+			.main-imges-bottom{width: 1150px;margin: 0 auto;height: 200px;}
+			.main-imges-bottom .main-imges-bottom-left{margin-top: 20px;margin-left: 2.5%;height: 160px;}
+			.main-imges-bottom .main-imges-bottom-r1{margin-top: 20px;margin-left: 2.5%;height: 160px;}
+			.main-imges-bottom .main-imges-bottom-r1{margin-top: 20px;margin-left: 2.5%;height: 160px;}
+			.main-imges-bottom .main-imges-bottom-r1{margin-top: 20px;margin-left: 2.5%;height: 160px;}
+			
+			.main-vedio-clothes{width: 100%;background-color: white;}
+			.main-vedio{height: 700px;width: 1150px;margin: 0 auto;padding: 1px;}
+			.main-vedio-top{line-height: 30px;margin-top: 30px;}
+			.main-vedio-top-item-1{font-size: 25px;font-weight: 800;float: left;color: white;}
+			.main-vedio-top-item-2{background-color: #333333;color: white;float: left;line-height: 30px;}
+			
+			.main-imges-top-items{clear: both;}
+			.main-imges-top-items1{float:left;width: 120px;margin: 5px;font-size: 20px;color: grey;}
+			
+			.main-vedio-bottom{margin-top:30px;float: none;}
+			.main-vedio-bottom-left{width: 374px;height: 570px;float: left;}
+			.main-vedio-bottom-r1{width: 353px;height: 275px;float: left;margin-left: 35px;}
+			.main-vedio-bottom-r1-b{width: 353px;height: 275px;float: left;margin-left: 35px;margin-top: 20px;}
+			#black{color: black;}
+			
+			.main-ok-clothes{background-color: #393B3C;height: 555px;width: 100%; padding: 1px;}
+			.main-ok{width: 1150px;margin: 0 auto;margin-top: 20px;}
+			.main-ok-top{margin-bottom: 15px;}
+			.main-ok-bottom{clear: both;}
+			
+			.main-ok-bottom-tl{float: left;width: 835px; height: 260px;margin-top: 25px;}
+			.main-ok-bottom-tr{float: left;width: 265px; height: 260px;margin-left: 50px;margin-top: 25px;}
+			.main-ok-bottom-bl{float: left;margin-top: 30px;}
+			.main-ok-bottom-b{float: left;margin-left: 30px;margin-top: 30px;}
+			
+			.main-phone-clothes{background-color: #222222;width: 100%;height: 555px;padding: 1px;}
+			.main-phone{margin:  20px auto;width: 1150px;}
+			.main-phone-bottom{clear: both;}
+			.main-phone-bottom-tl{height: 448px;width: 560px;float: left;margin-top: 20px;}
+			.main-phone-bottom-trt{height: 224px;width: 560px;float: left;margin-top: 20px;}
+			.main-phone-bottom-trb{height: 224px;width: 280px;float: left;}
+			.main-phone-bottom-trb{height: 224px;width: 280px;float: left;}
+			
+			.main-fix-clothes{background-color: #393B3C;width: 100%;height: 400px;padding: 1px;}
+			.main-fix{margin: 20px auto;width: 1150px;height: 400px;}
+			.main-fix-bottom{clear: both;width: 1150px;}
+			.main-fix-bottom-tr img{width: 560px;height: 290px;float: left;}
+			
+			.main-fix-bottom .main-fix-bottom-lt1 img{width: 280px;height: 145px;float: left;}
+			.main-fix-bottom-lt2 img{width: 280px;height: 145px;float: left;}
+			.main-fix-bottom-lb1 img{width: 280px;height: 145px;float: left;}
+			.main-fix-bottom-lb2 img{width: 280px;height: 145px;float: left;}
+			
+			.foot{width: 1150px;height: 360px;color:white;padding: 1px;margin: 0 auto;}
+			.foot-clothes{background-color: black;width: 100%;height: 360px;margin-top: 40px;}
+			.foot-top .foot-logo{font-size: 50px;width: 280px;}
+			.foot-top{
+				width: 1150px;
+				height: 190px;
+				/*background-color: gray;*/
+				margin: 50px auto;
+				border-bottom: 1px solid white;
+			}
+			.tips{text-align: center;}
+			.foot-top ul{float: left;font-size: 15px;line-height: 30px;}
+			.foot-top .foot-top-li{width: 215px;height: 30px;font-weight: 800;}
+			.wechat{background: url(img/wechat.png);width: 111px;height: 111px;}
+			.foot-top ul .footer-top-li{
+				padding-bottom: 20px;
+				font-weight: 800;
+			}
+			.foot-bottom{float: right;margin-right: 30px;}
+			.foot-bottomtext{float: right;}
+			.foot-bottom-img{background: url(img/icon-identification.png);width: 24px;height: 24px;float: right;}
+			.foot-bottom-img:hover{background-position: 24px 0px;}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="head-big">
+				<div class="head">
+					<div class="head-left"></div>
+					<ul>
+						<li>首页</li>
+						<li>视频</li>
+						<li>One Key</li>
+						<li>手机工具</li>
+						<li>FIX</li>
+						<li>实验室</li>
+						<li>联系我们</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="main-imges">
+					<div class="main-imges-top">
+						<img class="main-imges-top-left" src="img/zealer1 (21).jpg" />
+						<img class="main-imges-top-r1" src="img/zealer1 (44).jpg" />
+						<img class="main-imges-top-r1" src="img/zealer1 (30).jpg" />
+						<img class="main-imges-top-r1" src="img/zealer1 (18).jpg" />
+						<img class="main-imges-top-r1" src="img/zealer1 (2).jpg" />
+					</div>
+					<div class="main-imges-bottom">
+						<img class="main-imges-bottom-left" src="img/zealer1 (7).jpg" />
+						<img class="main-imges-bottom-r1" src="img/zealer1 (43).jpg" />
+						<img class="main-imges-bottom-r1" src="img/zealer1 (14).jpg" />
+						<img class="main-imges-bottom-r1" src="img/zealer1 (25).jpg" />
+					</div>
+				</div>
+				<div class="main-vedio-clothes">
+					<div class="main-vedio">
+						<div class="main-vedio-top">
+							<div class="main-vedio-top-item">
+								<p class="main-vedio-top-item-1" id="black">官方视频&nbsp;&nbsp;&nbsp;</p>
+								<p class="main-vedio-top-item-2">MORE></p>
+							</div>
+							<ul class="main-imges-top-items">
+								<li class="main-imges-top-items1">手机简评</li>
+								<li  class="main-imges-top-items1">硬件评测</li>
+								<li  class="main-imges-top-items1">ZEALER|TIPS</li>
+								<li class="main-imges-top-items1">ZEALER酷品</li>
+								<li class="main-imges-top-items1">智慧生活</li>
+								<li class="main-imges-top-items1">科技相对论</li>
+							</ul>
+						</div>
+						<div class="main-vedio-bottom">
+							<div class="main-vedio-bottom-left"><img src="img/zealer1 (34).jpg"/></div>
+							<div class="main-vedio-bottom-r1"><img src="img/zealer1 (35).jpg"/></div>
+							<div class="main-vedio-bottom-r1"><img src="img/zealer1 (11).jpg"/></div>
+							<div class="main-vedio-bottom-r1-b"><img src="img/zealer1 (13).jpg"/></div>
+							<div class="main-vedio-bottom-r1-b"><img src="img/zealer1 (37).jpg"/></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-ok-clothes">
+					<div class="main-ok">
+						<div class="main-ok-top">
+							<div class="main-vedio-top-item">
+								<p class="main-vedio-top-item-1">OK推荐&nbsp;&nbsp;&nbsp;</p>
+								<p class="main-vedio-top-item-2">MORE></p>
+							</div>
+						</div>
+						<div class="main-ok-bottom">
+							<div class="main-ok-bottom-tl"><img src="img/zealer1 (36).jpg"/></div>
+							<div class="main-ok-bottom-tr"><img src="img/zealer1 (31).jpg"/></div>
+							<div class="main-ok-bottom-bl"><img src="img/zealer1 (17).jpg"/></div>
+							<div class="main-ok-bottom-b"><img src="img/zealer1 (42).jpg"/></div>
+							<div class="main-ok-bottom-b"><img src="img/zealer1 (8).jpg"/></div>
+							<div class="main-ok-bottom-b"><img src="img/zealer1 (15).jpg"/></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-phone-clothes">
+					<div class="main-phone">
+						<div class="main-phone-top">
+							<div class="main-vedio-top-item">
+									<p class="main-vedio-top-item-1">手机工具&nbsp;&nbsp;&nbsp;</p>
+									<p class="main-vedio-top-item-2">MORE></p>
+							</div>
+						</div>
+						<div class="main-phone-bottom">
+							<div class="main-phone-bottom-tl"><img src="img/zealer1 (23).jpg"/></div>
+							<div class="main-phone-bottom-trt"><img src="img/zealer1 (12).jpg"/></div>
+							<div class="main-phone-bottom-trb"><img src="img/zealer1 (29).jpg"/></div>
+							<div class="main-phone-bottom-trb"><img src="img/zealer1 (19).jpg"/></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-fix-clothes">
+					<div class="main-fix">
+						<div class="main-phone-top">
+							<div class="main-vedio-top-item">
+									<p class="main-vedio-top-item-1">FIX手机服务&nbsp;&nbsp;&nbsp;</p>
+									<p class="main-vedio-top-item-2">MORE></p>
+							</div>
+						</div>
+						<div class="main-fix-bottom">
+							<div class="main-fix-bottom-t">
+								<div class="main-fix-bottom-tr"><img src="img/zealer1 (27).jpg"/></div>
+								<div class="main-fix-bottom-ltl"><img src="img/zealer1 (32).jpg"/></div>
+								<!--<div class="main-fix-bottom-lt2"><img src="img/zealer1 (5).jpg"/></div>
+								<div class="main-fix-bottom-lbl"><img src="img/zealer1 (20).jpg"/></div>
+								<div class="main-fix-bottom-lb2"><img src="img/zealer1 (22).jpg"/></div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot-clothes">
+				<div class="foot">
+					<div class="foot-top">
+						<ul class="foot-logo">
+							<li>ZEALER</li>
+						</ul>
+						<ul>
+							<li class="foot-top-li">业务</li><li>手机服务</li><li>实验室</li><li>社区</li>
+						</ul>
+						<ul>
+							<li class="foot-top-li">关于我们</li><li>会员条款</li><li>加入我们</li><li>关于ZEALER</li>
+						</ul>
+						<ul>
+							<li class="foot-top-li">关注我们</li><li>新浪微博</li><li>联系我们</li>
+						</ul>
+						<ul class="foot-top-right">
+							<li class="tips">官方微信</li>
+							<li class="wechat"><div class=""></div></li>
+						</ul>
+					</div>
+					<div class="foot-bottom">
+						<p class="foot-bottomtext"> 粤ICP备12076188号-1</p>
+						<div class="foot-bottom-img"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="top">
+			<!--兄弟关系+父子关系空格不是同一个父亲不能用-->
+			<img src="img/top.png">
+			<div id="backtop">
+				<a href=""><img src="img/backtop.png"></a>
+			</div>
+		</div>
+	</body>
+</html>

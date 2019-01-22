@@ -1,0 +1,30 @@
+			.stage{
+				width: 580px;
+				height: 324px;
+				perspective: 800px;
+				margin: 0 auto;
+			}
+			.rotate{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				left: 0px;
+				top: 0px;
+				transform-style: preserve-3d;
+				perspective-origin: 50% 50%;
+				
+				/*过渡*/
+				transition: all 1s ease;
+			}
+			.front{
+				position: absolute;
+				float: left;
+				left: 0px;
+				top: 0px;
+			}
+			.front{
+				transform: translateZ(2px);
+			}
+			.rotate:hover{
+				transform: translateZ(20px);
+			}
