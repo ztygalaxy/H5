@@ -2,13 +2,9 @@
 	<img width="100" height="100" src="screenshots/logo.jpg" alt="logo">
 </p>
 
-<p align="center">
-	<img src="https://img.shields.io/badge/platform-HTML-lightgrey.svg">
-    <img src="https://img.shields.io/badge/status-finished-blue.svg">
-    <img src="https://img.shields.io/badge/mail-tyzhang@hdu.edu.cn-orange.svg">
-</p>
-
 ## H5
+
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)  [![Badge](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu/#/zh_CN)  [![Mail](https://img.shields.io/badge/mail-zhangty1996@163.com-orange.svg)]()
 
 #### 一些HTML的练习
 
