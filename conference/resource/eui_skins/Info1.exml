@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="skins.Info1Skin" minWidth="1080" minHeight="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="15896149d1e"/>
+	<ns1:InfoCommon id="common" data="1" width="1080" height="1920" horizontalCenter="0" verticalCenter="0" skinName="skins.InfoCommonSkin"/>
+    <e:Group id="imageGroup" width="990" horizontalCenter="0" top="180" bottom="140"/>
+</e:Skin>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="skins.CloseButtonSkin" states="up,down" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Rect width="100%" height="100%" alpha="0"/>
+    <e:Image width="62" height="62"
+             source="btn_close_png"
+             scaleX.down="1.1" 
+             scaleY.down="1.1" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

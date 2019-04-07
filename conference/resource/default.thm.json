@@ -1,0 +1,21 @@
+{
+  "skins": {
+    "eui.InfoCommon": "resource/eui_skins/InfoCommonSkin.exml",
+    "eui.Info1": "resource/eui_skins/Info1Skin.exml",
+    "eui.CloseButton": "resource/eui_skins/CloseButtonSkin.exml"
+  },
+  "autoGenerateExmlsList": true,
+  "styles": {
+    "label1": {
+      "size": 60,
+      "border": "true",
+      "textColor": "0xFF0000"
+    }
+  },
+  "exmls": [
+    "resource/eui_skins/CloseButtonSkin.exml",
+    "resource/eui_skins/InfoCommon.exml",
+    "resource/eui_skins/Info1.exml",
+    "resource/eui_skins/Info2.exml"
+  ]
+}
